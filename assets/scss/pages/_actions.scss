@@ -1,0 +1,205 @@
+.hidden-popup {
+    #actions {
+        .file-detail-popup {
+            transform: translateX(320px);
+        }
+        .main-panel {
+            >.navbar {
+                padding-right: 0;
+            }
+        }
+    }
+}
+.sidebar-overlay {
+    #actions {
+        .navbar {
+            padding-left: 320px;
+        }
+    }
+}
+#actions {
+    .swinton-btn {
+        margin-left: 30px;
+        color: $black-color !important;
+        font-weight: bold;
+        padding: 8px 15px;
+    }
+    .sidebar {
+        border-top-right-radius: 0;
+        transform: translate3d(-320px, 0, 0);
+        padding-top: 50px;
+    }
+    .main-panel {
+        background-color: #000C33;
+        padding-left: 0;
+        >.navbar {
+            padding-top: 40px;
+            padding-right: 320px;
+        }
+    }
+    .action-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        h2 {
+            margin: 0 20px 0 0;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+    .nav.nav-pills {
+        li {
+            border-bottom: 2px solid rgba($brand-primary, 0.2);
+            &.active {
+                border-bottom: 2px solid $brand-primary;
+            }
+            a {
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+    .tab-content {
+        padding-top: 40px;
+        .tab-pane {
+            color: white;
+            .panel-group {
+                .panel {
+                    background: white;
+                    color: $black-color;
+                    margin: 30px 0;
+                    padding: 10px 20px;
+                    .panel-heading {
+                        border: 0;
+                        padding:0 10px 5px 0px;
+                        .panel-title {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            font-size: 14px;
+                            h4 {
+                                margin: 0;
+                                color: #FA5E0C;;
+                                font-weight: 500;
+                            }
+                            button {
+                                margin: 0;
+                                i {
+                                    color: white;
+                                }
+                            }
+                            span, i {
+                                color: $black-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &#projectFiles {
+                table {
+                    border: 1px solid rgba(255, 255, 255, 0.15);
+                    thead {
+                        background: white;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                        th {
+                            color: $black-color;
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+                    }
+                    tbody {
+                        td {
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .file-detail-popup {
+        position: fixed;
+        height: 100vh;
+        width: 320px;
+        top: 0;
+        right: 0;
+        background: white;
+        padding: 35px 25px;
+        transition: all ease 0.5s;
+        overflow: auto;
+        z-index: 5;
+        .close-popup {
+            color: $black-color;
+        }
+        .popup-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: $black-color;
+            margin-bottom: 40px;
+        }
+        .attachments {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            font-weight: 400;
+            h5 {
+                font-weight: 500;
+            }
+            .attach-file {
+                color: #FA5E0C;
+                text-decoration: underline;
+                margin-bottom: 5px;
+            }
+            .attach-date {
+                color: $black-color;
+                margin-bottom: 5px;
+            }
+            .attach-delete {
+                color: $black-color;
+                text-decoration: underline;
+                margin-bottom: 5px;
+            }
+            button.upload-file {
+                width: 125px;
+                padding: 8px 0px;
+                display: flex;
+                justify-content: center;
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+        .assigned-users {
+            display: flex;
+            flex-wrap: wrap;
+            span {
+                cursor: pointer;
+                margin: 5px;
+                background: $brand-primary;
+                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                border-radius: 25px;
+                color: white;
+                font-size: 12px;
+                font-weight: 400;
+                i {
+                    font-size: 10px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        label {
+            color: $black-color;
+        }
+        button[type='submit'] {
+            background: #000C33;
+            width: 100%;
+        }
+    }
+}
