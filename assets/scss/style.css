@@ -9691,27 +9691,6 @@ footer {
   border-top-right-radius: 0;
   transform: translate3d(-320px, 0, 0);
   padding-top: 50px; }
-  #actions .sidebar .sidebar-wrapper {
-    padding-bottom: 100px; }
-  #actions .sidebar .nav li .active a {
-    box-shadow: none !important; }
-    #actions .sidebar .nav li .active a .sidebar-normal {
-      color: #5200FF; }
-  #actions .sidebar .nav li .caret {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-top: 12px; }
-  #actions .sidebar .nav .menu-group:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 36px;
-    height: 1px;
-    width: calc(100% - 72px);
-    background-color: rgba(180, 180, 180, 0.3); }
-  #actions .sidebar .nav .sidebar-normal {
-    white-space: normal; }
 #actions .main-panel {
   background-color: #000C33;
   padding-left: 0; }

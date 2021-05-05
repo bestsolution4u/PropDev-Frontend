@@ -25,7 +25,7 @@
 
 <body class="hidden-popup">
 	<div class="wrapper" id="actions">
-    <div class="sidebar" data-active-color="rose" data-background-color="white">
+    <div class="sidebar" data-active-color="white" data-background-color="white">
       <div class="navbar-minimize">
         <a href="#" class="minimizeSidebar hidden visible-md-block visible-lg-block">
           <i class="material-icons text-black">close</i>
@@ -39,14 +39,13 @@
 
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li>
+          <li class="menu-group">
             <a href="#devHome">
-              <p> Development Home
-              </p>
+              <p> Development Home</p>
             </a>
             <div id="devHome">
               <ul class="nav">
-                <li>
+                <li class="active">
                   <a href="#">
                     <span class="sidebar-normal">Project Actions</span>
                   </a>
@@ -58,7 +57,7 @@
                 </li>
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Project Ownership</span>
+                    <span class="sidebar-normal">Project Overview</span>
                   </a>
                 </li>
                 <li>
@@ -69,8 +68,7 @@
               </ul>
             </div>
           </li>
-          
-          <li>
+          <li class="menu-group">
             <a href="#legalInfo">
               <p> Legal Information
               </p>
@@ -105,58 +103,599 @@
               </ul>
             </div>
           </li>
-          
-          <li>
+          <li class="menu-group">
             <a href="#fundingAndFinancial">
-              <p> Funding & Financials
+              <p> Funding & financials
               </p>
             </a>
             <div id="fundingAndFinancial">
               <ul class="nav">
-                <li>
+                <li class="nav-item">
                   <a href="#">
                     <span class="sidebar-normal">Funding Overview</span>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#financialPartners" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Financial Partners
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="financialPartners">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#financialPartners0" data-toggle="collapse" aria-expanded="false">
+                          <p class="sidebar-normal">Financial partner name #1
+                            <b class="caret"></b>
+                          </p>
+                        </a>
+                        <div class="collapse" id="financialPartners0">
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Funder contact</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Facility detail</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Facility detail2</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Banking covenants</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Conditions precedent</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#financialPartners1" data-toggle="collapse" aria-expanded="false">
+                          <p class="sidebar-normal">Financial partner name #2
+                            <b class="caret"></b>
+                          </p>
+                        </a>
+                        <div class="collapse" id="financialPartners1">
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Funder contact</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Facility detail</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Banking covenants</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Conditions precedent</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#bankValuations" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Bank valuations
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="bankValuations">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Bank valuation name #1</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Bank valuation name #2</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Bank valuation name #3</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="#">
+                    <span class="sidebar-normal">Equity requirements</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#jointVentureAgreements" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Joint venture agreements
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="jointVentureAgreements">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">JVA Party name #1</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">JVA Party name #2</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">JVA Party name #3</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#developmentManagementAgreement" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Development management agreement
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="developmentManagementAgreement">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">DMA Party name #1</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">DMA Party name #2</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">DMA Party name #3</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-group">
+            <a href="#bankFundMonitor">
+              <p> Bank fund monitor
+              </p>
+            </a>
+            <div id="bankFundMonitor">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#bankFundMonitorItems" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Bank fund monitors
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="bankFundMonitorItems">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#bankFundMonitorItem0" data-toggle="collapse" aria-expanded="false">
+                          <p class="sidebar-normal">Fund monitor name #1
+                            <b class="caret"></b>
+                          </p>
+                        </a>
+                        <div class="collapse" id="bankFundMonitorItem0">
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Contact details</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Summary</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Initial report</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Valuation 1</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#bankFundMonitorItem1" data-toggle="collapse" aria-expanded="false">
+                          <p class="sidebar-normal">Fund monitor name #2
+                            <b class="caret"></b>
+                          </p>
+                        </a>
+                        <div class="collapse" id="bankFundMonitorItem1">
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Contact details</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Summary</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Initial report</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Valuation 1</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-group">
+            <a href="#planningApplications">
+              <p> Planning applications
+              </p>
+            </a>
+            <div id="planningApplications">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#planningApplicationContainer" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">All applications
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="planningApplicationContainer">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#planningApplication1" data-toggle="collapse" aria-expanded="false">
+                          <p class="sidebar-normal">Application #1
+                            <b class="caret"></b>
+                          </p>
+                        </a>
+                        <div class="collapse" id="planningApplication1">
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Planning matrix</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Legal agreements</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#planningApplication2" data-toggle="collapse" aria-expanded="false">
+                          <p class="sidebar-normal">Application #2
+                            <b class="caret"></b>
+                          </p>
+                        </a>
+                        <div class="collapse" id="planningApplication2">
+                          <ul class="nav">
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Planning matrix</span>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="#">
+                                <span class="sidebar-normal">Legal agreements</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-group">
+            <a href="#development">
+              <p> development
+              </p>
+            </a>
+            <div id="development">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#devManagementHome" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Development management home
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="devManagementHome">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Architecture</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Insurance</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Health & Safety</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Principal designer</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Principal contractor</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Quantity surveyor</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#utilitieshome" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Utilities home
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="utilitieshome">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Electric</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Gas</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Open reach</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Virgin media</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-group">
+            <a href="#meetings">
+              <p>Meetings</p>
+            </a>
+            <div id="meetings">
+              <ul class="nav">
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Financial Partners</span>
+                    <span class="sidebar-normal">Design team meetings</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Funder Contact</span>
+                    <span class="sidebar-normal">Sales and marketing meeting</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Facility Contact</span>
+                    <span class="sidebar-normal">Finance meeting</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Banking Conveants</span>
+                    <span class="sidebar-normal">Legal meeting</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-group">
+            <a href="#marketing">
+              <p>Marketing</p>
+            </a>
+            <div id="marketing">
+              <ul class="nav">
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Marketing materials</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-group">
+            <a href="#sales">
+              <p>Sales</p>
+            </a>
+            <div id="sales">
+              <ul class="nav">
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Sales summary</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Conditions Conveants</span>
+                    <span class="sidebar-normal">Sales schedule</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Join Venture</span>
+                    <span class="sidebar-normal">Pricing schedule</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Equity Requirements</span>
+                    <span class="sidebar-normal">Sales agent</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <span class="sidebar-normal">Development Management</span>
+                    <span class="sidebar-normal">Show home</span>
                   </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Sales competition</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Legal plans and postal addresses</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Utilities management</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Management company</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Service charge budget</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Customer care</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Site setup checklist</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Accomodation schedule</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Land commercial building sales</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sidebar-normal">Build certifications</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-group">
+            <a href="#commercial">
+              <p>Commercial</p>
+            </a>
+            <div id="commercial">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#">
+                    <span class="sidebar-normal">Summary</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contractor0" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Contractor #1
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="contractor0">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Principal designer</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Principal contractor</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Programme</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contractor1" data-toggle="collapse" aria-expanded="false">
+                    <p class="sidebar-normal">Contractor #2
+                      <b class="caret"></b>
+                    </p>
+                  </a>
+                  <div class="collapse" id="contractor1">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Principal designer</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Principal contractor</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#">
+                          <span class="sidebar-normal">Programme</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -407,6 +946,8 @@
 
 <!-- Material DEMO methods, don't include it in your project! -->
 <script src="./assets/js/demo.js"></script>
+
+<script src="./assets/js/development-project-actions.js"></script>
 
 
 

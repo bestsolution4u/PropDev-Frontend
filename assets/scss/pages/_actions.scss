@@ -28,6 +28,43 @@
         border-top-right-radius: 0;
         transform: translate3d(-320px, 0, 0);
         padding-top: 50px;
+
+        .sidebar-wrapper {
+            padding-bottom: 100px;
+        }
+
+        .nav {
+            li {
+                .active a {
+                    box-shadow: none !important;
+
+                    .sidebar-normal {
+                        color: #5200FF;
+                    }
+                }
+
+                .caret {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin-top: 12px;
+                }
+            }
+
+            .menu-group:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 36px;
+                height: 1px;
+                width: calc(100% - 72px);
+                background-color: rgba(180, 180, 180, 0.3);
+            }
+
+            .sidebar-normal {
+                white-space: normal;
+            }
+        }
     }
     .main-panel {
         background-color: #000C33;
