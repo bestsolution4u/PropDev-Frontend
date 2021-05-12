@@ -10055,6 +10055,8 @@ footer {
       #actions .tab-content .tab-pane .panel-group .panel .panel-heading {
         border: 0;
         padding: 0 10px 5px 0px; }
+        #actions .tab-content .tab-pane .panel-group .panel .panel-heading > a i {
+          display: none; }
         #actions .tab-content .tab-pane .panel-group .panel .panel-heading .panel-title {
           display: flex;
           justify-content: space-between;
@@ -10182,14 +10184,12 @@ footer {
     text-transform: capitalize; }
     #actions .file-detail-popup .button-goto-file:hover {
       background-color: #FA5E0C; }
-#actions .bootstrap-select {
-  z-index: 0; }
-  #actions .bootstrap-select .select-with-transition {
-    background: none !important;
-    color: white !important;
-    text-transform: none; }
-  #actions .bootstrap-select .dropdown-menu {
-    min-width: 0; }
+#actions .bootstrap-select .select-with-transition {
+  background: none !important;
+  color: white !important;
+  text-transform: none; }
+#actions .bootstrap-select .dropdown-menu {
+  min-width: 0; }
 
 @media (max-width: 767px) {
   #actions .mobile-menu-extra {
@@ -10214,6 +10214,7 @@ footer {
       vertical-align: top;
       display: flex; }
       #actions .panel-heading > a i {
+        display: block !important;
         color: #000C33; } }
 
 /*# sourceMappingURL=style.css.map */
